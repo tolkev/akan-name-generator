@@ -64,7 +64,7 @@ function getAkanName () {
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
   ];
 
-   //generating and index value to select items on arrays
+   //index value to select items on arrays
    let index;
    // fix formula bug
    if (dayOfWeekNumber == 0){
@@ -72,3 +72,12 @@ function getAkanName () {
    } else {
      index = dayOfWeekNumber - 1;
    }
+
+   console.log(index);
+
+   if (myGenderValue == "male" && monthValid && dayValid) {
+    document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index];
+    document.getElementById('display-name').textContent = "Here is your Akan name: ";
+    document.getElementById('result').style.fontSize = "18px";
+    document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index];
+    return false;
