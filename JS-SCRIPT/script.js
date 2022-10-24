@@ -55,3 +55,7 @@ function getAkanName () {
    let daysOfWeek = [
     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
   ];
+
+  let maleAkanNames = [
+    "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
+  ];
